@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pegawai Array</title>
+    <style>
+        h2{
+            text-align: center;
+            padding: 20px 0;
+            margin: 20px auto 20px;
+            border-radius: 20px;
+            color: #5d55d3;
+            font-size: 3rem;
+            text-shadow: 3px 2px #d5d3eb;
+            width: 50%;
+        }
+
+        body {
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            color: #ffff;
+        }
+
+
+        table, th, td {
+            border: 1px solid #ffffff;
+        }
+
+        th{
+            text-align: center;
+            padding: 10px;
+            column-span: 4;
+        }
+        
+        td {
+            padding: 8px;
+            text-align: center;
+            font-weight: 600;
+            transition: all .3s ease;
+        }
+
+        tr:hover td{
+            background: #fff;
+            color: #5d55d3;
+            cursor: pointer;
+        }
+
+        .container{
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            background: #5d55d3;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>
+        Data Pegawai IT
+    </h2>
+
+    <div class="container">
+        <table cellpadding="5" cellspacing="0" border="1" width="100%">
+            <thead>
+                <tr>
+                    <th rowspan="2">No.</th>
+                    <th rowspan="2">Nama</th>
+                    <th colspan="4">Data</th>
+                </tr>
+                <tr>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Jabatan</th>
+                    <th>Gaji</th>
+                </tr>
+            </thead>
+            <tbody>
+                <script>
+                    let data = [
+                        [
+                            'Irbadh', 'Laki-laki', '21 Oct 2008', 'Front End', 7500000
+                        ],
+                        [
+                            'Bintang', 'Laki-laki', '10 Oct 2008', 'Back End', 7500000
+                        ],
+                        [
+                            'Haris', 'Laki-laki', '22 Oct 2008', 'Data Analyst', 6000000
+                        ],
+                        [
+                            'Azzam', 'Laki-laki', '5 Jan 2009', 'Full Stack', 8500000
+                        ],
+                        [
+                            'Evan', 'Laki-laki', '17 Feb 2008', 'IT Consultant', 4000000
+                        ]
+                    ];
+    
+                    for (let i = 0; i < data.length; i++){
+                        document.write(`
+                        <tr>
+                            <td>${i+1}</td>
+                            <td>${data[i][0]}</td>
+                            <td>${data[i][1]}</td>
+                            <td>${data[i][2]}</td>
+                            <td>${data[i][3]}</td>
+                            <td>Rp. ${data[i][4]}</td>
+                        </tr>
+                        `)
+                    };
+                </script>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

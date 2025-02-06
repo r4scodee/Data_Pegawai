@@ -28,30 +28,36 @@
             width: 100%;
             border-collapse: collapse;
             text-align: center;
-            color: #ffff;
+            color: #5d55d3;
         }
 
 
         table, th, td {
-            border: 1px solid #ffffff;
+            border: 1px solid #5d55d3;
         }
 
         th{
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             column-span: 4;
         }
         
         td {
-            padding: 8px;
+            padding: 12px;
             text-align: center;
             font-weight: 600;
             transition: all .3s ease;
         }
 
+        tr:nth-child(1) {
+            background: #5d55d3;
+            color: #fff;
+            padding: 32px;
+        }
+
         tr:hover td{
-            background: #fff;
-            color: #5d55d3;
+            background: #5d55d3;
+            color: #fff;
             cursor: pointer;
         }
 
@@ -59,8 +65,18 @@
             width: 80%;
             height: auto;
             margin: 0 auto;
-            background: #5d55d3;
+            background: #fff;
             border-radius: 15px;
+            justify-content: center;
+        }
+
+        .footer{
+            text-align: center;
+            padding: 30px 0;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #5d55d3;
+            font-family: 'Comic Sans ms', sans-serif;
         }
     </style>
 </head>
@@ -73,14 +89,11 @@
         <table cellpadding="5" cellspacing="0" border="1" width="100%">
             <thead>
                 <tr>
-                    <th rowspan="2">No.</th>
-                    <th rowspan="2">Nama</th>
-                    <th colspan="4">Data</th>
-                </tr>
-                <tr>
-                    <th>Tanggal Lahir</th>
+                    <th>No.</th>
+                    <th>Nama</th>
                     <th>Jenis Kelamin</th>
-                    <th>Jabatan</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Pekerjaan</th>
                     <th>Gaji</th>
                 </tr>
             </thead>
@@ -119,6 +132,12 @@
                 </script>
             </tbody>
         </table>
+    </div>
+
+    <div class="footer">
+        <p>
+            Made IN CHINA
+        </p>
     </div>
 </body>
 </html>
